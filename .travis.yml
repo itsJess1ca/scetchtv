@@ -33,8 +33,8 @@ deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key: "$AWS_SECRET_KEY"
-  bucket: scetchtv
-  endpoint: scetchtv.s3-website-us-west-2.amazonaws.com
+  bucket: scetch.tv
+  endpoint: scetch.tv.s3-website-us-west-2.amazonaws.com
   region: us-west-2
   skip_cleanup: true
   local-dir: dist

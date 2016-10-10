@@ -1,0 +1,27 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700';
+
+$fonts: (
+  Roboto: (
+    light: 300,
+    normal: 400,
+    bold: 500
+  ),
+  Roboto Condensed: (
+    light: 300,
+    normal: 400,
+    bold: 700
+  )
+);
+
+@mixin getFont($fontFamily, $fontWeight: normal) {
+  @if (map-has-key($fonts, $fontFamily)) {
+    $_font: map-get($fonts, $fontFamily);
+    font-family: $fontFamily, sans-serif;
+    font-weight: map-get($_font, $fontWeight);
+  }
+  @else {
+    font-family: 'Roboto', sans-serif;
+    font-weight: map-get(map-get($fonts, Roboto), normal);
+  }
+}

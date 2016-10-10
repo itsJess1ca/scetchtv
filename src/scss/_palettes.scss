@@ -1,0 +1,52 @@
+$colors: (
+  primary: ( // Dark Blue
+    50: #e8edf5,
+    100: #b2c4df,
+    200: #8ba5ce,
+    300: #597fb9,
+    400: #486faa,
+    500: #3f6195,
+    600: #36537f,
+    700: #2d456a,
+    800: #243754,
+    900: #1b293f,
+    A100: #e8edf5,
+    A200: #b2c4df,
+    A400: #486faa,
+    A700: #2d456a
+  ),
+  accent: ( // Light Blue
+    50: #ffffff,
+    100: #d4ebfd,
+    200: #9fd1fa,
+    300: #5bb1f6,
+    400: #3ea4f5,
+    500: #2196f3,
+    600: #0d87e9,
+    700: #0b76cc,
+    800: #0966af,
+    900: #085592,
+    A100: #ffffff,
+    A200: #d4ebfd,
+    A400: #3ea4f5,
+    A700: #0b76cc
+  )
+);
+
+// Material Color Palette
+@function palette($theme, $key: 500) {
+  @if map-has-key($colors, $theme) {
+    $theme: map-get($colors, $theme);
+    @if map-has-key($theme, $key) {
+      @return map-get($theme, $key);
+    }
+    @else {
+      @warn "Unknown `#{$key}` in $colors";
+      @return null
+    }
+  }
+  @else {
+    @warn "Unknown `#{$key}` in $colors";
+    @return null
+  }
+}
