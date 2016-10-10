@@ -19,6 +19,7 @@ befort_script:
 - npm install -g karma
 - npm install
 - ng build -prod
+- ls
 script: karma start karma.conf.js --single-run
 deploy:
   provider: s3
