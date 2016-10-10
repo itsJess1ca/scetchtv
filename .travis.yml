@@ -57,6 +57,7 @@ deploy:
 ## Setup build status notifications
   slack:
     secure: ljdqHU21J996v0EvT3j+qfk8kkIOrjUKbiZvyXQAhEa+xXf60pbIyaEUL5G4K8rpNcvmmC6o8mmT7uiwbLDh4PNexgFpFZy/3mnIiHpP1vZK6Ns3+HYCCZmYHyI9zG8emAPjL5T3nLDthY/7w0Z9TOhFPXCAjzuZyCbCRTs4789o4mmaOeuGHAnDabarvTQLw892PBfN2yL1lFSoqhdtEI8EiUkGU8sGGMPyuO1LckB14P1ee/svUsmrfPqoW26FoVLR2LYlZ6l9QNbUCp4MPbv7+9Gopdb5kWlz3vuk+AlIg+grZchUjb2p0IMgblkRE0EDFoS834ut7ygbWnmy2hra7uNYndsFd80IeifWr8MFf9/qphl/YoUIcRQT4koruBxAc86HkRJC9nO/tqHa8gCafPAuRMrf7KOlg7vA2332gpnj/FWeqBTPfunCr1/N3JPedgkiGsU5AZLhgw+7CqV/9pP2KZqrudaF59NEig08qAQJXMTzejHCbGu+3z3TWelwGUOXSOpeuDHLzzgeK/SfBW56jap6fOiVBRIQoZwG6Lgoh21afebEqo4TBLGtQ6eL4Uf15veQ9G3BDne+n1Rt7rpLlgpd9wEX3YTKupkeCp9nGRrJPIJnC1j4Zn2+pDJOUC1I7BHVcaw8/4wPSVaDlDXbblUUdUuNWBdyUIQ=
+    on_success: change
     on_failure: change
   email:
     on_failure: always
