@@ -26,7 +26,7 @@ deploy:
   secret_access_key: "$AWS_SECRET_KEY"
   bucket: scetchtv
   endpoint: scetchtv.s3-website-us-west-2.amazonaws.com
-  region: Oregon
+  region: us-west-2
   skip_cleanup: true
   local-dir: dist
   acl: public_read
