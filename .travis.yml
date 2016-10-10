@@ -26,4 +26,4 @@ befort_script:
 script: karma start karma.conf.js --single-run
 
 after_success:
-  - ./deploy.sh
+  - ng github-pages:deploy
