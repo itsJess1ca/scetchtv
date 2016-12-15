@@ -72,7 +72,6 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     console.log(this.schedule);
   }
-
 }
 
 export interface StreamSchedule {
