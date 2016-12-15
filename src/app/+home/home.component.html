@@ -1,0 +1,39 @@
+<section id="hero">
+  <div id="content">
+    <h1 id="hero-title">Scetchlink</h1>
+    <h3 id="hero-subtitle">The SkyeCrew</h3>
+    <hr class="hero-seperator">
+    <button md-raised-button color="primary" id="hero-join-btn">JOIN THE COMMUNITY</button>
+  </div>
+</section>
+
+<section id="schedule">
+  <article id="schedule-details">
+    <h1 class="title">Schedule</h1>
+    <h3 class="subtitle">Subject to change - @Scetchlink for updates</h3>
+    <hr class="title-break">
+    <div class="schedule-line" *ngFor="let slot of schedule;">
+      <div class="schedule-line__days">{{slot.days}}</div>
+      <div class="schedule-line__slot">{{slot.slot}}</div>
+    </div>
+  </article>
+  <article id="upcoming-events">
+    <h1 class="title">Schedule</h1>
+    <h3 class="subtitle">Subject to change - @Scetchlink for updates</h3>
+    <hr class="title-break">
+    <div class="schedule-line">
+      <div class="schedule-line__days">Fri 17 -</div>
+      <div class="schedule-line__slot">Q4TC Charity Stream</div>
+    </div>
+  </article>
+</section>
+
+<section id="stream">
+  <iframe
+    src="http://player.twitch.tv/?channel=scetchlink"
+    height="100%"
+    width="480"
+    frameborder="0"
+    scrolling="no">
+  </iframe>
+</section>

@@ -1,0 +1,106 @@
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  padding-bottom: 64px;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  #content {
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    #hero-title {
+      font-variant: small-caps;
+      font-size: 5em;
+      font-weight: 400;
+    }
+    #hero-subtitle {
+      font-variant: small-caps;
+      font-size: 2em;
+      font-weight: 100;
+      color: rgba(255,255,255,0.76);
+    }
+    #hero-join-btn {
+      padding: 7px 20px;
+    }
+    .hero-seperator {
+      width: 35%;
+    }
+
+  }
+}
+
+#schedule {
+  min-height: 270px;
+  display: flex;
+  width: 60%;
+  background-color: rgba(0,0,0,0.96);
+  color: white;
+  padding: 30px 24px;
+  margin: 30px 0;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.26);
+
+  #schedule-details, #upcoming-events {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  #schedule-details {
+    width: 60%;
+  }
+  #upcoming-events {
+    flex: 1;
+    border-left: 1px solid white;
+    padding-left: 24px;
+  }
+
+  .schedule-line {
+    display: flex;
+    flex-flow: row nowrap;
+    line-height: 1.2em;
+    font-weight: 400;
+    .schedule-line__days {
+      width: 25%;
+    }
+    .schedule-line__slot {
+
+    }
+  }
+  .title {
+    font-size: 2.5em;
+    font-variant: small-caps;
+    font-weight: 400;
+  }
+  .subtitle {
+    font-size: 1em;
+    font-variant: small-caps;
+    font-weight: 100;
+    color: rgba(255,255,255,0.76);
+  }
+  .title-break {
+    width: 80%;
+  }
+}
+
+#stream {
+  display: flex;
+  width: 60%;
+  background-color: rgba(0,0,0,0.96);
+  color: white;
+  padding: 30px 24px;
+  height: 270px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.26);
+}
+

@@ -1,5 +1,11 @@
 @import 'config';
 
+:host {
+  display: block;
+  background: url('../assets/img/hero-background.png') no-repeat fixed center center;
+  background-size: cover;
+}
+
 h1 {
   color: palette(accent);
   @include getFont(Roboto);
